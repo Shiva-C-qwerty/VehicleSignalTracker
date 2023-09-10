@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Bob",
+    "password": "bobo",
+    "carId": "03D"
+  },
+  {
+    "id": 2,
+    "name": "jojo",
+    "password": "qwerty",
+    "carId": "12A"
+  },
+  {
+    "id": 3,
+    "name": "shivc",
+    "password": "pop",
+    "carId": "LX4"
+  },
+  {
+    "id": 4,
+    "name": "helo",
+    "password": "helo",
+    "carId": "2LL"
+  },
+  {
+    "id": 5,
+    "name": "qwertyuiop",
+    "password": "asdfg",
+    "carId": "4IP"
+  },
+  {
+    "id": 6,
+    "name": "asdfg",
+    "password": "zxcv",
+    "carId": "97O"
+  },
+  {
+    "id": 7,
+    "name": "pop",
+    "password": "pop",
+    "carId": "MDQ"
+  }
+]

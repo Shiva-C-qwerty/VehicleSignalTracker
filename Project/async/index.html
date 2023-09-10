@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Data</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sensor Data</h1>
+    <div id="output"></div>
+    <div id="map"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKorrXuz5vMd_XEkglhW_qu_GktE9ng4&callback=initMap"
+        async defer></script>
+    <script>
+        const socket = io();
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('data', (message) => {
+            const outputElement = document.getElementById('output');
+            outputElement.innerHTML += `<p>${message}</p>`;
+
+            const latLng = extractLatLng(message);
+            if (latLng) {
+                updateMap(latLng);
+            }
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+
+        function extractLatLng(message) {
+            const regex = /Latitude: ([-+]?\d+\.\d+), Longitude: ([-+]?\d+\.\d+)/;
+            const match = message.match(regex);
+            if (match) {
+                const latitude = parseFloat(match[1]);
+                const longitude = parseFloat(match[2]);
+                return { lat: latitude, lng: longitude };
+            }
+            return null;
+        }
+
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 0, lng: 0 },
+                zoom: 2,
+            });
+        }
+
+        function updateMap(latLng) {
+            const marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+            });
+            map.setCenter(latLng);
+            map.setZoom(10);
+        }
+    </script>
+</body>
+
+</html>

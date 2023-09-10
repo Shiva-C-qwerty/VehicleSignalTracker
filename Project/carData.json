@@ -1,0 +1,90 @@
+[
+  {
+    "carId": "abc123",
+    "location": {
+      "latitude": 37.7749,
+      "longitude": -22.4194
+    },
+    "fuelLevel": 70
+  },
+  {
+    "carId": "84C",
+    "location": {
+      "latitude": 35.5253,
+      "longitude": -24.6068
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "XDG",
+    "location": {
+      "latitude": 69.6305,
+      "longitude": 67.2472
+    },
+    "fuelLevel": 70
+  },
+  {
+    "carId": "0RD",
+    "location": {
+      "latitude": -69.3932,
+      "longitude": 76.4449
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "LX4",
+    "location": {
+      "latitude": -35.716,
+      "longitude": 85.4101
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "12A",
+    "location": {
+      "latitude": -79.9964,
+      "longitude": 11.4442
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "2LL",
+    "location": {
+      "latitude": 22.2011,
+      "longitude": -6.3527
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "4IP",
+    "location": {
+      "latitude": -60.1951,
+      "longitude": -79.2765
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "97O",
+    "location": {
+      "latitude": 13.20904755034882,
+      "longitude": 80.2104077862032
+    },
+    "fuelLevel": 10
+  },
+  {
+    "carId": "03D",
+    "location": {
+      "latitude": 13.209047550348828,
+      "longitude": 80.21040778620329
+    },
+    "fuelLevel": 4
+  },
+  {
+    "carId": "MDQ",
+    "location": {
+      "latitude": -89.1074,
+      "longitude": 29.8735
+    },
+    "fuelLevel": 10
+  }
+]
