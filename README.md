@@ -18,7 +18,8 @@ To get started with VehicleSignalTracker, follow the instructions below:
 3. Run the application using `node app.js`.
 4. Now the application starts running on localhost.
 
-Please refer to the detailed documentation in the repository for more information on configuration options, API integration, and customization.
+To visit the official documentation of the project [Click Here](https://docs.google.com/document/d/1E8g60Gsm0Cymw4RBsTV2nRwJ7MxkgO5x4W9ajtz0ZHs/edit?usp=sharing)
+
 
 
 
